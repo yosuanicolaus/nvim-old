@@ -21,8 +21,7 @@ if should_profile then
   time = function(chunk, start)
     if start then
       profile_info[chunk] = hrtime()
-    else
-      profile_info[chunk] = (hrtime() - profile_info[chunk]) / 1e6
+    elsegit@github.com:yosuanicolaus/nvim-old.git
     end
   end
 else
